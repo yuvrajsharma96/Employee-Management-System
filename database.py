@@ -18,4 +18,7 @@ def add_employee(employee):
     data = load_data()
     data.append(employee)
     save_data(data)
+def view_employee():
+    return load_data()
+
 
