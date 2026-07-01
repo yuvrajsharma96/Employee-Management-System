@@ -14,3 +14,8 @@ def load_data():
 def save_data(data):
     with open(File,"w") as f:
         json.dump(data,f,indent=4)
+def add_employee(employee):
+    data = load_data()
+    data.append(employee)
+    save_data(data)
+
