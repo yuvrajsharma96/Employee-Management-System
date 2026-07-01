@@ -1,12 +1,12 @@
 import json
 import os 
 
-File="employees.json"
+FILE="employees.json"
 
 def load_data():
-    if not os.path.exists(File):
+    if not os.path.exists(FILE):
         return[]
-    with open(File,"r") as f:
+    with open(FILE,"r") as f:
         try:
             return json.load(f)
         except:
@@ -14,7 +14,7 @@ def load_data():
 
 
 def save_data(data):
-    with open(File,"w") as f:
+    with open(FILE,"w") as f:
         json.dump(data,f,indent=4)
 
 
@@ -35,7 +35,7 @@ def search_employee(emp_id):
     for emp in data :
         if emp["ID"] == emp_id:
             return emp
-        return None
+    return None
     
 
 

@@ -58,7 +58,7 @@ while True :
         emp_id = input("enter employee id: ")
         database.delete_employee(emp_id)
 
-        print("print employee deleted")
+        print("employee deleted")
 
     elif choice =="5":
         print("Thank You!!")
