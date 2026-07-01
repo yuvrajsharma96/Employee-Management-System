@@ -15,7 +15,7 @@ def menu():
 while True :
     menu()
 
-    choice = input("enter your choice")
+    choice = input("enter your choice: ")
 
     if choice == "1":
         emp_id = input("enter employee ID: ")

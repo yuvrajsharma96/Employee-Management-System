@@ -1,10 +1,10 @@
 class Employee:
     def __init__(self,name,salary,empid,age,department):
-        name =self.name
-        empid =self.empid
-        age = self.age
-        department = self.department
-        salary = self.salary
+        self.name = name 
+        self.empid = empid 
+        self.age = age
+        self.department = department
+        self.salary =salary
     def to_dict(self):
         return{
             "ID": self.empid,
