@@ -21,4 +21,11 @@ def add_employee(employee):
 def view_employee():
     return load_data()
 
+def search_employee(emp_id):
+    data = load_data()
+    for emp in data :
+        if emp["ID"] == emp_id:
+            return emp
+        return None
+
 
