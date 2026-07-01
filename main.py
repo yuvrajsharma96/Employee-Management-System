@@ -30,6 +30,8 @@ while True :
 
         print ("employee added sucessfully")
 
+
+
     elif choice == "2":
         employees = database.view_employee()
 
@@ -40,5 +42,30 @@ while True :
              print("-------------")
              for key , value in emp.items():
                  print(f"{key}: {value}")
+
+
+    elif choice == "3":
+        emp_id = input("Enter employee id: ")
+        emp = database.search_employee(emp_id)
+
+        if emp:
+            print(emp)
+        else:
+            print("employee not found")
+    
+
+    elif choice =="4":
+        emp_id = input("enter employee id: ")
+        database.delete_employee(emp_id)
+
+        print("print employee deleted")
+
+    elif choice =="5":
+        print("Thank You!!")
+        break
+    else:
+        print("invalid choice")
+
+
 
 
